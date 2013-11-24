@@ -8,6 +8,8 @@
     <!-- versionCode is optional and Android only -->
         
     <name>Fossil Hunter</name>
+      
+    <icon src="icon.png" />
     
     <preference name="phonegap-version" value="3.1.0" />
 
