@@ -13,3 +13,6 @@ h1{text-align:center;}
         width:100%; 
         font-size:0.6em;
     }
+.page-title{
+  margin-top: -5px;
+}
