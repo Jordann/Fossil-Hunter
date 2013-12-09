@@ -15,9 +15,9 @@
     
     <script type="text/javascript" src="phonegap.js"></script>
     <!--
-    <script type="text/javascript" src="geolocation.js"></script>
-    <script type="text/javascript" src="camera.js"></script>
-    -->
+<script type="text/javascript" src="geolocation.js"></script>
+<script type="text/javascript" src="camera.js"></script>
+-->
     <script type="text/javascript" src="index.js"></script>
     
   </head>
@@ -29,6 +29,20 @@
         <h3>
           Fossil Hunter
         </h3>
+        <a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-icon="edit" data-theme="a" data-transition="pop">Sign in</a>
+        <a href="#profile" data-icon="edit" data-iconpos="right" class="ui-btn-right" data-transition="none">Profile</a>
+      </div>
+      <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+        <form>
+          <div style="padding:10px 20px;">
+            <h3>Please sign in</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="b">
+            <label for="pw" class="ui-hidden-accessible">Password:</label>
+            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="b">
+            <button type="submit" data-theme="b" data-icon="check">Sign in</button>
+          </div>
+        </form>
       </div>
       <img src="img/durdleDoor.jpg" alt="image" width="100%" max-height="100%">
       <div data-role="content">
@@ -45,6 +59,135 @@
         <a class="twitter-timeline" href="https://twitter.com/matbush/jurassic-coast" data-widget-id="404027793794547712">Tweets from https://twitter.com/matbush/jurassic-coast</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         
+        <div data-role="navbar" data-iconpos="top" data-position="fixed" data-id="foo1">
+          <ul>
+            <li>
+              <a href="#page2" data-transition="none" data-theme="a" data-icon="search">
+                Fossils
+              </a>
+            </li>
+            <li>
+              <a href="#page3" data-transition="none" data-theme="a" data-icon="alert">
+                Code
+              </a>
+            </li>
+            <li>
+              <a href="#page4" data-transition="none" data-theme="a" data-icon="info">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#page5" data-transition="none" data-theme="a" data-icon="forward">
+                Trips
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Profile -->
+    <div data-role="page" id="profile" data-add-back-btn="true">
+      <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+          Profile
+        </h3>
+        <a href="#leaderboard" data-icon="bars" data-iconpos="right" class="ui-btn-right" data-transition="none">Leaderboard</a>
+      </div>
+      <img src="img/profile.png" alt="image" width="50%" max-height="100%" style="margin: 0 auto; display:block;margin-top:10px;">
+      <div data-role="content">
+        <h2 class="page-title">
+          Joe Blogs
+        </h2>
+        <h3 class="page-title">
+          Level 3 Fossil Hunter
+        </h3>
+        <h4 class="page-title">386 points | 5 fossils found</h4>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true" data-icon="star">
+          <li data-role="list-divider" role="heading">
+            Fossils Found:
+          </li>  
+          <li data-theme="c">
+            <img src="img/ammonite.jpg" width="40px" height="40px" style="float:left">
+            <a href="#Ammonites" data-transition="none">
+              Ammonites
+            </a>
+          </li>
+          <li data-theme="c">
+            <img src="img/belemnite.jpg" width="40px" height="40px" style="float:left">
+            <a href="#belemnites" data-transition="none">
+              Belemnites
+            </a>
+          </li>
+          <li data-theme="c">
+            <img src="img/brittle-stars.jpg" width="40px" height="40px" style="float:left">
+            <a href="#brittle-stars" data-transition="none">
+              Brittle-stars
+            </a>
+          </li>
+          <li data-theme="c">
+            <img src="img/crinoids.jpg" width="40px" height="40px" style="float:left">
+            <a href="#crinoids" data-transition="none">
+              Crinoids
+            </a>
+          </li>
+          <li data-theme="c">
+            <img src="img/dimorphodon.jpg" width="40px" height="40px" style="float:left">
+            <a href="#dimorphodon" data-transition="none">
+              Dimorphodon
+            </a>
+          </li>
+        </ul>
+        
+        <div data-role="navbar" data-iconpos="top" data-position="fixed" data-id="foo1">
+          <ul>
+            <li>
+              <a href="#page2" data-transition="none" data-theme="a" data-icon="search">
+                Fossils
+              </a>
+            </li>
+            <li>
+              <a href="#page3" data-transition="none" data-theme="a" data-icon="alert">
+                Code
+              </a>
+            </li>
+            <li>
+              <a href="#page4" data-transition="none" data-theme="a" data-icon="info">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#page5" data-transition="none" data-theme="a" data-icon="forward">
+                Trips
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- leaderboard -->
+    <div data-role="page" id="leaderboard" data-add-back-btn="true">
+      <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+          Leaderboard
+        </h3>
+      </div>
+      <img src="icon.png" alt="image" width="50%" max-height="100%" style="margin: 0 auto; display:block;margin-top:10px;">
+      <div data-role="content">
+        <h2 class="page-title">
+          Top Fossil hunters!
+        </h2>
+        
+        <ol data-role="listview" style="margin-top:10px;">
+          <li>Toby Lerone<span class="ui-li-count">Level 12</span></li>
+          <li>Martin Kiss<span class="ui-li-count">Level 10</span></li>
+          <li>Paul Bird<span class="ui-li-count">Level 8</span></li>
+          <li>George Gregary Efesopoulos<span class="ui-li-count">Level 7</span></li>
+          <li>Joe Blogs<span class="ui-li-count">Level 3</span></li>
+        </ol>
+        <a data-role="button" data-transition="none" data-theme="b" href="#page1"
+           data-icon="forward" data-iconpos="left" style="margin-top:30px;">
+          Sign up now!
+        </a>
         <div data-role="navbar" data-iconpos="top" data-position="fixed" data-id="foo1">
           <ul>
             <li>
@@ -195,6 +338,7 @@
         <h1>
           Ammonites
         </h1>
+        <a href="#profile" data-icon="check" data-iconpos="right" class="ui-btn-right" data-transition="none">Found</a>
       </div>
       <div data-role="content">
         <div style=" position: relative;">
@@ -237,6 +381,7 @@
         <h3>
           Belemnites
         </h3>
+        <a href="#profile" data-icon="check" data-iconpos="right" class="ui-btn-right" data-transition="none">Found</a>
       </div>
       <div data-role="content">
         <div style=" position: relative;">
@@ -279,6 +424,7 @@
       <h3>
         Brittle-stars
       </h3>
+      <a href="#profile" data-icon="check" data-iconpos="right" class="ui-btn-right" data-transition="none">Found</a>
     </div>
     <div data-role="content">
       <div style=" position: relative;">
@@ -321,6 +467,7 @@
     <h3>
       Crinoids
     </h3>
+    <a href="#profile" data-icon="check" data-iconpos="right" class="ui-btn-right" data-transition="none">Found</a>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -363,6 +510,7 @@
     <h3>
       Dimorphodon
     </h3>
+    <a href="#profile" data-icon="check" data-iconpos="right" class="ui-btn-right" data-transition="none">Found</a>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -406,6 +554,20 @@
     <h3>
       Echinoids
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -448,6 +610,20 @@
     <h3>
       Fish
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -490,6 +666,20 @@
     <h3>
       Sea Shells
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -532,6 +722,20 @@
     <h3>
       Ichthyosaurs
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -574,6 +778,20 @@
     <h3>
       Insects
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -616,6 +834,20 @@
     <h3>
       Plesiosaurs
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -658,6 +890,20 @@
     <h3>
       Scelidosaurus
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
@@ -702,6 +948,20 @@
     <h3>
       Plants
     </h3>
+    <a href="#popupAdd" data-rel="popup" data-position-to="window" data-role="button" data-iconpos="right" data-icon="plus" data-theme="a" data-transition="pop" class="ui-btn-right">Find</a>
+    <div data-role="popup" id="popupAdd" data-theme="a" class="ui-corner-all">
+      <form>
+        <div style="padding:10px 20px;">
+          <h3>Have you found this fossil?</h3>
+          <label for="un" class="">Where:</label>
+          <input type="text" name="user" id="un" value="" placeholder="" data-theme="c">
+          <label for="pw" class="">When:</label>
+          <input type="date" name="pass" id="pw" value="" placeholder="" data-theme="c">
+          <input type="button" id="btnCapture" value="Add a photo" data-icon="plus" data-theme="c">
+          <button type="submit" data-theme="b" data-icon="check">Add to your profile</button>
+        </div>
+      </form>
+    </div>
   </div>
   <div data-role="content">
     <div style=" position: relative;">
