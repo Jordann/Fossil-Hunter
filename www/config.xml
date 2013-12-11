@@ -14,7 +14,7 @@
     <preference name="phonegap-version" value="3.1.0" />
 
     <description>
-        Find Fossils on the Jurassic Coast and score points!
+        Fossil hunter is the companion app for the Charmouth heritage centre and it's Fossil hunting walks. With the app you can go out looking for fossils along the Jurassic Coast. The app includes a fossil identifier to help you identify what you have found, then once you have found them you can tag it as 'Found' on the app and gain points for your profile. As well users can upload a photo of their fossil finds to be shown on their profile and to be shared on social networks.
         </description>
 
     <author href="http://matbush.co.uk" email="mat@matbush.co.uk">
