@@ -8,3 +8,5 @@ Go on a fossil hunt with the new app for the Jurassic Coast
 A HTML5 mobile app made with PhoneGap and jQuery mobile.
 
 [Try the app here (Online App Demo)](http://dakar.bournemouth.ac.uk/~mbush/app-demo/)
+
+(This was made as a university project and is not an official product of the Charmouth Heritage Center)
